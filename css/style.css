@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    margin: 0;
+    background-image: linear-gradient(180deg,#004C65 , #000002);
+}
+h1{
+    font-family: Ubuntu , sans-serif;
+    color: white;
+}
+.btn-startGame{
+    color: #6d691e;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #e5dc15;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.6em #c2bb11, 0 0.9em rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 0;
+    transition: all 300ms ease-in-out;
+}
+.btn-startGame:hover{
+    background: #e5dc15;
+    color: #0e79b2;
+}
+.btn-startGame:active {
+    top: 0.6em;
+    box-shadow: 0 0.2em rgba(0, 0, 10, 0.9);
+}
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.genius{
+    display: grid;
+    grid-template-areas: 'green red'
+    'yellow blue';
+    grid-gap: 10px;
+    border: 5px solid white;
+    background-color: #141514;
+    border-radius: 100%;
+    margin-top: 10px;
+    width: 700px;
+    height: 700px;
+}
+.blue{
+    grid-area: blue;
+    background-color: #0000CB;
+    border-bottom-right-radius: 100%;
+}
+.red{
+    grid-area: red;
+    background-color: #BC0000;
+    border-top-right-radius: 100%;
+}
+.yellow{
+    grid-area: yellow;
+    background-color: #FFD027;
+    border-bottom-left-radius: 100%;
+}
+.green{
+    grid-area: green;
+    background-color: #00A600;
+    border-top-left-radius: 100%;
+}
+.selected{
+    opacity: 0.6;
+}
